@@ -14,7 +14,7 @@ vocoder_tag = "none" #@param ["none", "parallel_wavegan/ljspeech_parallel_wavega
 text2speech = Text2Speech.from_pretrained(
     model_tag=str_or_none(tag),
     vocoder_tag=str_or_none(vocoder_tag),
-    device="cuda",
+    device="cpu",
     # Only for Tacotron 2 & Transformer
     threshold=0.5,
     # Only for Tacotron 2
